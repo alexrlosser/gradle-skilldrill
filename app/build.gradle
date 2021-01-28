@@ -26,6 +26,9 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+
+    // Use GSON to read and write JSON files
+    compile 'com.google.code.gson:gson:2.8.6'
 }
 
 application {

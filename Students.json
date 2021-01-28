@@ -1,0 +1,65 @@
+[
+  {
+    "firstName": "Mickey",
+    "lastName": "Mouse",
+    "enrolledIn": [
+      {
+        "courseNum": 1101,
+        "courseSub": "English",
+        "courseTitle": "English and American Literature"
+      },
+      {
+        "courseNum": 1404,
+        "courseSub": "Money Management",
+        "courseTitle": "Managing Financial Services and Institutions"
+      },
+      {
+        "courseNum": 1118,
+        "courseSub": "Psychology",
+        "courseTitle": "The Meaning Behind our Brain"
+      }
+    ]
+  },
+  {
+    "firstName": "Donald",
+    "lastName": "Duck",
+    "enrolledIn": [
+      {
+        "courseNum": 1404,
+        "courseSub": "Money Management",
+        "courseTitle": "Managing Financial Services and Institutions"
+      },
+      {
+        "courseNum": 2201,
+        "courseSub": "Physics",
+        "courseTitle": "Physics in the Known Universe"
+      },
+      {
+        "courseNum": 1601,
+        "courseSub": "AG Welding",
+        "courseTitle": "Welding with Gas and AC Equipment"
+      }
+    ]
+  },
+  {
+    "firstName": "Minnie",
+    "lastName": "Mouse",
+    "enrolledIn": [
+      {
+        "courseNum": 1440,
+        "courseSub": "Computer Science",
+        "courseTitle": "Computer Science and Programming"
+      },
+      {
+        "courseNum": 1601,
+        "courseSub": "AG Welding",
+        "courseTitle": "Welding with Gas and AC Equipment"
+      },
+      {
+        "courseNum": 1101,
+        "courseSub": "English",
+        "courseTitle": "English and American Literature"
+      }
+    ]
+  }
+]
