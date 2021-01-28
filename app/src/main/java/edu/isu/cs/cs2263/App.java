@@ -3,14 +3,53 @@
  */
 package edu.isu.cs.cs2263;
 
+import com.google.common.collect.Lists;
 import javafx.application.Application;
+import javafx.beans.Observable;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.util.List;
 
 public class App  extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("First JavaFX Application Test");
+        primaryStage.setTitle("");
+
+        // Components
+        ListView listCourse = new ListView();
+        Label labelCourse = new Label("Courses");
+        ListView listStudents = new ListView();
+        Label labelStudent = new Label("Students");
+        Button buttonLoad = new Button("Load Data");
+
+        Label labelTaking = new Label("Is taking:");
+
+        //Testing Components
+        listStudents.getItems().add("Mickey");
+        listStudents.getItems().add("Donald");
+        listStudents.getItems().add("Minnie");
+
+        //Actions
+        buttonLoad.setOnAction(value -> {
+            //Load Action here
+            listStudents.getItems().add("Goofy");
+        });
+
+        //Layouts
+        VBox vBoxL = new VBox(labelStudent, listStudents);
+        VBox vBoxR = new VBox(labelCourse, listCourse, buttonLoad);
+        HBox hBoxTop = new HBox(vBoxL, labelTaking, vBoxR);
+
+        //Scene
+        Scene scene = new Scene(hBoxTop, 450, 200);
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
